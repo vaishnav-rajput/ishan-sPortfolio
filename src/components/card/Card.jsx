@@ -10,7 +10,7 @@ const Card = ({number, title, description, side}) => {
   const ref = useRef(null);
   const {scrollYProgress} = useScroll({
     target:ref,
-    offset : ["0 1", "1.14 1"]
+    offset : ["0 1", "1.18 1"]
   })
 
   return (
