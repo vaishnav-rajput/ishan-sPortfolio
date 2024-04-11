@@ -1,0 +1,46 @@
+.project-card-01{
+    background-image: url(../../assets/project1.jpg);
+    position: relative;
+}
+
+.project-card-02{
+    background-image: url(../../assets/Project2.png);
+}
+
+.project-card-03{
+    background-image: url(../../assets/Project3.png);
+}
+  
+.project-card-04{
+    background-image: url(../../assets//Project4.png);
+}
+
+.project-card::after{
+content:"";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(31, 31, 31, 0.2);
+z-index: 0;
+}
+
+
+.project-card::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.project-card:hover::before{
+    transform: scaleX(1);
+}
